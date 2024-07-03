@@ -3,7 +3,7 @@
   "version": "17.0.0", 
   "private": true,
   "description": "Probably the most modern and sophisticated insecure web application",
-  "keywords": [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
+  "keywords": [
     "web security",
     "web application security",
     "webappsec",
@@ -22,7 +22,7 @@
   "homepage": "https://owasp-juice.shop",
   "bugs": {
     "url": "https://github.com/juice-shop/juice-shop/issues"
-  },
+  },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
   "repository": {
     "type": "git",
     "url": "https://github.com/juice-shop/juice-shop.git"
