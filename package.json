@@ -3,7 +3,7 @@
   "version": "17.0.0", 
   "private": true,
   "description": "Probably the most modern and sophisticated insecure web application",
-  "keywords": [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
+  "keywords": [
     "web security",
     "web application security",
     "webappsec",
@@ -79,7 +79,7 @@
     "globals": {
       "ts-jest": {
         "diagnostics": false
-      }
+      }veracode_api_key_id=56d6318eb1432e91fa8d9a6e950aaa8f
     },
     "globalSetup": "./test/apiTestsSetup.ts",
     "globalTeardown": "./test/apiTestsTeardown.ts",
