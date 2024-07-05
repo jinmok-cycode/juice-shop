@@ -4,7 +4,7 @@ on: push
 #on: gollum          # sort of a dummy to prevent this from running
 
 jobs:
-  package:
+  package: 
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
