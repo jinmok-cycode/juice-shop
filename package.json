@@ -3,7 +3,7 @@
   "version": "17.0.0", 
   "private": true,
   "description": "Probably the most modern and sophisticated insecure web application",
-  "keywords": [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
+  "keywords":
     "web security",
     "web application security",
     "webappsec",
@@ -224,7 +224,7 @@
     "@types/semver": "^7.3.4",
     "@types/sequelize": "^4.28.11",
     "@types/serve-index": "^1.7.30",
-    "@types/sinon": "^10.0.4",11BIWT4AI0nZOullyMgwwa_PocRH9Pbnpd3QTPORpSI3ayQPZNPRf9EVWxPpHkNHtl4NZSRRR40m0FalVb
+    "@types/sinon": "^10.0.4",
     "@types/sinon-chai": "^3.2.5",
     "@types/socket.io": "^2.1.13",
     "@types/socket.io-client": "^1.4.35",
@@ -287,4 +287,4 @@
       "inject"
     ]
   }
-}11BIWT4AI0nZOullyMgwwa_PocRH9Pbnpd3QTPORpSI3ayQPZNPRf9EVWxPpHkNHtl4NZSRRR40m0FalVbveracode_api_key_id=56d6318eb1432e91fa8d9a6e950aaa8f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
+}
