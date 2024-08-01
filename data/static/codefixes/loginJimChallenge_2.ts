@@ -9,12 +9,12 @@ module.exports = function login () {
         security.authenticatedUsers.put(token, user)
         res.json({ authentication: { token, bid: basket.id, umail: user.data.email } })
       }).catch((error: Error) => {
-        next(error)
-      })
-  }
-
-  return (req: Request, res: Response, next: NextFunction) => {
-    models.sequelize.query(`SELECT * FROM Users WHERE email = '${req.body.email || ''}' AND password = '${security.hash(req.body.password || '')}' AND deletedAt IS NULL`, { model: models.User, plain: false })
+return (req: Request, res: Response, next: NextFunction) => {
+    const email = req.body.email || '';
+    const hashedPassword = security.hash(req.body.password || '');
+    const sqlQuery = `SELECT * FROM Users WHERE email = :email AND password = :password AND deletedAt IS NULL`;
+    const replacements = { email, password: hashedPassword };
+    models.sequelize.query(sqlQuery, { model: models.User, plain: false, replacements })
       .then((authenticatedUser) => {
         const user = utils.queryResultToJson(authenticatedUser)
         if (user.data?.id && user.data.totpSecret !== '') {
